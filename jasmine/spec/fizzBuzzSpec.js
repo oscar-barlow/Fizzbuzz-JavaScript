@@ -33,12 +33,16 @@ describe("Fizzbuzz", function() {
     expect(fizzbuzz.output(3)).toEqual("Fizz");
   });
 
-  it("should return buss when divisible by five", function() {
+  it("should return buzz when divisible by five", function() {
     expect(fizzbuzz.output(5)).toEqual("Buzz");
   });
 
-  it("should retur fizzbuzz when divisible by three and five", function(){
+  it("should return fizzbuzz when divisible by three and five", function(){
     expect(fizzbuzz.output(15)).toEqual("Fizzbuzz");
+  });
+
+  it("should return the number it was given if it's not divisible by three or five", function(){
+    expect(fizzbuzz.output(4)).toEqual(4)
   });
 
 });
