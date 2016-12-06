@@ -21,4 +21,12 @@ describe("Fizzbuzz", function() {
     expect(fizzbuzz.isDivisibleByFive(7)).toBeFalsy();
   });
 
+  it("should return true if a number is divisible by both three and five", function() {
+    expect(fizzbuzz.isDivisibleByThreeAndFive(15)).toBeTruthy();
+  });
+
+  it("should return false if a number is not divisible by both three and five", function() {
+    expect(fizzbuzz.isDivisibleByThreeAndFive(19)).toBeFalsy();
+  });
+
 });
