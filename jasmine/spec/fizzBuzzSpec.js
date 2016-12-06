@@ -13,4 +13,12 @@ describe("Fizzbuzz", function() {
     expect(fizzbuzz.isDivisibleByThree(4)).toBeFalsy();
   });
 
+  it("should test the divisibility by five", function() {
+    expect(fizzbuzz.isDivisibleByFive(5)).toBeTruthy();
+  });
+
+  it("should return false if given number not divisible by five", function() {
+    expect(fizzbuzz.isDivisibleByFive(7)).toBeFalsy();
+  });
+
 });
