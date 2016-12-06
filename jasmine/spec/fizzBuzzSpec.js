@@ -6,7 +6,11 @@ describe("Fizzbuzz", function() {
   });
 
   it("should test for divisibility by three", function() {
-    expect(fizzbuzz.isDivisibleByThree(3)).toEqual(true);
+    expect(fizzbuzz.isDivisibleByThree(3)).toBeTruthy();
+  });
+
+  it("should return false if given a number not divisible by three", function() {
+    expect(fizzbuzz.isDivisibleByThree(4)).toBeFalsy();
   });
 
 });
