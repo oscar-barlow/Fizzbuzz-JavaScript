@@ -29,4 +29,16 @@ describe("Fizzbuzz", function() {
     expect(fizzbuzz.isDivisibleByThreeAndFive(19)).toBeFalsy();
   });
 
+  it("should return fizz when divisible by three", function() {
+    expect(fizzbuzz.output(3)).toEqual("Fizz");
+  });
+
+  it("should return buss when divisible by five", function() {
+    expect(fizzbuzz.output(5)).toEqual("Buzz");
+  });
+
+  it("should retur fizzbuzz when divisible by three and five", function(){
+    expect(fizzbuzz.output(15)).toEqual("Fizzbuzz");
+  });
+
 });
